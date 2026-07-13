@@ -1,0 +1,24 @@
+rules:
+  - id: "unusual_payment"
+    name: "Unusual Payment Terms"
+    description: "Detects payment terms that deviate from standard NET 30/60 rules, such as payment in advance or upfront fees."
+    points: 20
+    keywords: ["immediate payment", "upfront", "advance payment", "net 7", "prepayment"]
+
+  - id: "broad_indemnification"
+    name: "Broad Indemnification"
+    description: "Detects clauses where the user indemnifies the other party for any and all claims, including negligence."
+    points: 30
+    keywords: ["indemnify", "hold harmless", "defend and hold harmless", "indemnification"]
+
+  - id: "short_termination"
+    name: "Short Termination Notice"
+    description: "Detects termination notices under 30 days or immediate termination rights without cause."
+    points: 15
+    keywords: ["termination notice", "terminate within", "immediate termination", "days notice", "without cause"]
+
+  - id: "missing_liability_cap"
+    name: "Missing Liability Cap"
+    description: "Detects absence of a limitation of liability, or unlimited liability clauses."
+    points: 25
+    keywords: ["unlimited liability", "no limit", "shall not exceed", "limitation of liability"]
