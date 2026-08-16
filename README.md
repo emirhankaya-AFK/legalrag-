@@ -1,5 +1,7 @@
 # LegalRAG - AI Legal Document Analyzer
 
+[English](README.md) | [Türkçe](README_TR.md)
+
 LegalRAG is a complete, automated legal contract risk assessment and clause extraction system.
 
 ## Setup Instructions
